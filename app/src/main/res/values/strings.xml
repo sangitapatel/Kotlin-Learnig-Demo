@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KotlinDemoProject</string>
+    <string-array name="light_colors">
+        <item>#FFE0B2</item>
+        <item>#FFF9C4</item>
+        <item>#C8E6C9</item>
+        <item>#BBDEFB</item>
+        <item>#E1BEE7</item>
+        <item>#F8BBD0</item>
+        <item>#DCEDC8</item>
+        <item>#FFECB3</item>
+    </string-array>
+</resources>
