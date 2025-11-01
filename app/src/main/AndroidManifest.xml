@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinDemoProject">
         <activity
+            android:name=".SQLite.SQLiteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomDB.RoomActivity"
+            android:exported="false" />
+        <activity
             android:name=".MVP.MVPActivity"
             android:exported="false" />
         <activity

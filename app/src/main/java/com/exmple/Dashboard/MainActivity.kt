@@ -7,17 +7,19 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.exmple.MVC.Controller.MVCActivity
 import com.exmple.MVP.MVPActivity
 import com.exmple.MVVM.Coroutine.view.MVVMActivity
+import com.exmple.RoomDB.RoomActivity
 import com.exmple.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), ItemClickListener {
-
     private lateinit var binding: ActivityMainBinding
     private lateinit var adapter: ArchitectureAdapter
     private val list = listOf(
         "MVC",
         "MVP",
         "MVVM Coroutine",
-        "MVVM Without Coroutine"
+        "MVVM Without Coroutine",
+        "RoomDatabase",
+        "SQLite"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,8 +36,14 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
         when (item) {
             "MVC" -> startActivity(Intent(this, MVCActivity::class.java))
             "MVP" -> startActivity(Intent(this, MVPActivity::class.java))
+            "RoomDatabase" -> startActivity(Intent(this, RoomActivity::class.java))
             "MVVM Coroutine" -> startActivity(Intent(this, MVVMActivity::class.java))
-            "MVVM Without Coroutine" -> startActivity(Intent(this, com.exmple.MVVM.WithoutCoroutine.MVVMActivity::class.java))
+            "MVVM Without Coroutine" -> startActivity(
+                Intent(
+                    this,
+                    com.exmple.MVVM.WithoutCoroutine.MVVMActivity::class.java
+                )
+            )
         }
     }
 }
