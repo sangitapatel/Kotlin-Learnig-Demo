@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinDemoProject">
         <activity
+            android:name=".RoomDB.UI.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".SQLite.SQLiteActivity"
             android:exported="false" />
         <activity
